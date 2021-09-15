@@ -6,9 +6,7 @@ class Products {
     }
 
     handleSetLocationStorage(el, id) {
-        // console.log(el, id)
         const {pushProduct, products} = localStorageUtil.putProducts(id)
-        console.log(pushProduct, products)
         if(pushProduct) {
             el.classList.add(this.classNameActive)
             el.innerHTML = this.labelRemove
@@ -57,4 +55,4 @@ class Products {
 }
 
 const productsPage = new Products()
-productsPage.render()
+// productsPage.render()

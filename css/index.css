@@ -19,6 +19,16 @@
 		0 8px 10px -5px rgba(33,37,41,.1);
 
 }
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--color-dark);;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+	background-color: var(--color-white);
+}
 * {
     box-sizing: border-box;
 }
