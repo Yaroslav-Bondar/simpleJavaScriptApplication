@@ -5,3 +5,4 @@ simple JavaScript application  (HTML CSS Java Script)
 - adding / removing from / to the basket, 
 - product list display 
 - using LocalStaroge
+- using local or remote JSON file (simulating server requests)
