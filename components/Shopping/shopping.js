@@ -7,7 +7,6 @@ class Shopping {
         let sumCatalog = 0
         let htmlCatalog = ''
         let currentCurrency
-        // img, 
         CATALOG.forEach(({id, name, currency, price}) => {
             if(productsStore.indexOf(id) !== -1) {
                 htmlCatalog += `

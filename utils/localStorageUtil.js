@@ -4,9 +4,7 @@ class LocalStorageUtil {
     }
     getProducts() {
         const productsLocalStorage = localStorage.getItem(this.keyName)
-        // console.log(productsLocalStorage)
         if(productsLocalStorage !== null) {
-            // console.log(JSON.parse(productsLocalStorage))
             return JSON.parse(productsLocalStorage)
         }
         return []
