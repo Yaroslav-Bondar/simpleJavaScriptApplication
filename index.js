@@ -6,19 +6,14 @@ function render() {
     productsPage.render()
 }
 let CATALOG = []
-// render()
-// var doesn`t pop up - ?
-// var CATALOG = []
-// server/catalog.json
-// https://api.npoint.io/54f9c1a9e3e1658820c1
-// fetch('https://api.npoint.io/54f9c1a9e3e1658820c1')
-fetch('server/catalog.json')
-    // alert(res.json())
-    // .then(res => console.log(res.json()))
+
+fetch('1server/catalog.json')
     .then(res => res.json())
-    .then(body => CATALOG = body)
-    // .then(body => console.log(body))
-render()
-    // .catch(err => console.log(err))
-console.log(CATALOG)
+    .then(body => {
+        CATALOG = body
+        render()
+    })
+    .catch(err => {
+        console.log(err)
+    }) 
 
