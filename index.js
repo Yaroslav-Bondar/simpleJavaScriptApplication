@@ -21,6 +21,7 @@ fetch('server/catalog.json')
         // }, 5000)
     })
     .catch(err => {
-        console.log(err)
+        spinnerPage.handleClear()
+        errorPage.render()
     }) 
 
